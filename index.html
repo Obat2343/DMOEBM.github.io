@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="Data-Driven Stochastic Motion Evaluation and Optimization with Image by Spatially-Aligned Temporal Encoding.">
   <meta name="keywords" content="Motion Planning, Imitation Learning, EBM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data-Driven Stochastic Motion Evaluation and Optimization with Image by Spatially-Aligned Temporal Encoding</title>
@@ -103,13 +103,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/explain.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">Nerfies</span> turns selfie videos from yo
       </h2>
     </div>
   </div>
@@ -182,39 +180,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            This paper proposes a probabilistic motion prediction method for long motions.
+            The motion is predicted so that it accomplishes a task from the initial state observed in the given image.
+            While our method evaluates the task achievability by the Energy-Based Model (EBM), previous EBMs are not designed for evaluating the consistency between different domains (i.e., image and motion in our method).
+            Our method seamlessly integrates the image and motion data into the image feature domain by spatially-aligned temporal encoding so that features are extracted along the motion trajectory projected onto the image.
+            Furthermore, this paper also proposes a data-driven motion optimization method, Deep Motion Optimizer (DMO), that works with EBM for motion prediction.
+            Different from previous gradient-based optimizers, our self-supervised DMO alleviates the difficulty of hyper-parameter tuning to avoid local minima.
           </p>
           <p>
-            abst1
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The effectiveness of the proposed method is demonstrated with a variety of experiments with similar SOTA methods.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
