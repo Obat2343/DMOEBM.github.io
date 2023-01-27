@@ -47,7 +47,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Data-Driven Stochastic Motion Evaluation and Optimization with Image by <br> Spatially-Aligned Temporal Encoding</h1>
+          <h1 class="title is-1 publication-title">Data-Driven Stochastic Motion Evaluation and Optimization with Image by <br> Spatially-Aligned Temporal Encoding <br> (ICRA 2023)</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://obat2343.wixsite.com/my-site">Takeru Oba</a><sup>1</sup>,</span>
@@ -142,6 +142,16 @@
         <h2 class="title is-3">Model Architecture</h2>
         <img src="static/images/Model.png" alt="cars peace"/>
       </div>
+       <p>
+        <b>Novelty of our model: </b>  
+        To evaluate the consistency (task achievability) between the image and the motion, we propose Spatially-Aligned Temporal Encoding to seamlessly integrate the image and motion data into the image feature domain.
+        Typically, all of the image and motion feature vectors are fed into the Transformer to fuse these features.
+        However, it contains many redundant features, such as those of the background, which are less useful for evaluating consistency properly. 
+        Our method solves this problem by extracting only meaningful features from the image feature map. 
+        Based on the idea that the most meaningful features are located along the motion trajectory, we spatially align the motion trajectory to the image plane and extract the features along it. 
+        We then concatenate the extracted image and motion features to associate them. 
+        Since our motion features contain the aligned position and time step information, this encoding can be regarded as spatially-aligned temporal encoding.
+       </p>
   </div>
 </div>
 </div>
